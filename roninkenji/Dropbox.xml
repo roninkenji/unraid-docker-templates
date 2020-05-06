@@ -89,7 +89,7 @@ Dropbox also makes it super easy to share with others, whether you're a student 
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Dropbox</HostDir>
+      <HostDir>/mnt/cache/Dropbox</HostDir>
       <ContainerDir>/dropbox/Dropbox</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -122,7 +122,7 @@ Dropbox also makes it super easy to share with others, whether you're a student 
     </Variable>
   </Environment>
   <Config Name="Config folder" Target="/dropbox" Default="/mnt/user/appdata/dropbox" Mode="rw" Description="Configuration files and updated dropbox binaries are stored here." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/dropbox</Config>
-  <Config Name="Data files" Target="/dropbox/Dropbox" Default="/mnt/user/Dropbox" Mode="rw" Description="This directory will contain the files sync'd into your Dropbox account. Use only a share where the cache setting is Only or No. " Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Dropbox</Config>
+  <Config Name="Data files" Target="/dropbox/Dropbox" Default="/mnt/cache/Dropbox" Mode="rw" Description="This directory will contain the files sync'd into your Dropbox account. Use only a share where the cache setting is Only or No. " Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/Dropbox</Config>
   <Config Name="User" Target="DROPBOX_USER" Default="nobody" Mode="" Description="User to run dropbox as." Type="Variable" Display="advanced" Required="false" Mask="false">nobody</Config>
   <Config Name="User ID" Target="DROPBOX_USERID" Default="99" Mode="" Description="uid to run dropbox as." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="Group" Target="DROPBOX_GROUP" Default="users" Mode="" Description="Group to run dropbox as." Type="Variable" Display="advanced" Required="false" Mask="false">users</Config>
